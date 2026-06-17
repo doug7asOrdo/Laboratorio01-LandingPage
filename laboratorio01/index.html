@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Celu Store — Accesorios tecnológicos, reparación y soporte técnico en Costa Rica." >
+
+        <title>Celu Store | Accesorios . Reparación . Soporte</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" >
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+        <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" >
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+
+    <body>
+        <header class="encabezado" role="banner">
+
+            <div class="contenido-encabezado">
+
+                <a href="#inicio" class="logo" aria-label="Celu Store - Inicio">
+                    <span class="logo-icono" aria-hidden="true">📱</span>
+                    <span class="logo-texto">Celu<strong>Store</strong></span>
+                </a>
+                <button class="boton-menu" id="botonmenu" aria-expanded="false" 
+                 aria-controls="menuPrincipal" aria-label="Abrir menú de navegación">
+                 <span class="linea-hamburguesa"></span>
+                 <span class="linea-hamburguesa"></span>
+                 <span class="linea-hamburguesa"></span>
+                </button>
+                <nav id="menuPrincipal" class="menu-principal" role="navigation" aria-label="Navegación principal">
+                    <ul role="list">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                    <button class="cambiar-tema" id="cambiarTema" aria-label="Cambiar a modo oscuro">
+                        <span id="temaIcono">🌙</span>
+                    </button>
+                </nav>
+
+            </div>
+
+        </header>
+
+        <main id="contenido-principal">
+
+            <section id="inicio" class="portada" aria-labelledby="titulo-principal">
+
+                <div class="contenido-principal">
+                    <p class="etiqueta-principal">🇨🇷 San Carlos, Costa Rica</p>
+                    <h1 id="titulo-principal">Celu Store,<br >
+                        <span class="destacado">tu mejor opción.</span>
+                    </h1>
+                    <p class="subtitulo">
+                        Accesorios originales, reparación profesional y soporte técnico 
+                        para todos tus dispositivos. Todo en un solo lugar.
+                    </p>
+                    <div class="acciones-principales">
+                        <a href="#servicios" class="btn btn-servicios">Ver servicios</a>
+                        <a href="#contacto" class="btn btn-contacto">Contáctanos</a>
+                    </div>
+                </div>
+
+                <div class="visual-principal" aria-hidden="true">
+                    <div class="phone-mockup">
+                        <div class="celular-pantalla">
+                            <span>📱</span><span>🔧</span><span>💻</span><span>🎧</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="servicios" class="servicios" aria-labelledby="titulo-servicios">
+
+                <div class="encabezado-servicios">
+                    <h2 id="titulo-servicios">
+                        Todo lo que tu dispositivo necesita, lo tenemos.
+                    </h2>
+                </div>
+                <div class="servicios-grid">
+
+                    <article class="tarjeta-servicios">
+                        <div class="icono-tarjeta" aria-hidden="true">🎧</div>
+                        <h3>Accesorios</h3>
+                        <p>Cargadores, audífonos, estuches, temperados y más.</p>
+                    </article>
+
+                    <article class="tarjeta-servicios">
+                        <div class="icono-tarjeta" aria-hidden="true">🔧</div>
+                        <h3>Reparación</h3>
+                        <p>Pantallas, baterías y puertos dañados. 
+                           Técnicos certificados con garantía en cada reparación.
+                        </p>
+                    </article>
+
+                    <article class="tarjeta-servicios">
+                        <div class="icono-tarjeta" aria-hidden="true">💡</div>
+                        <h3>Soporte Técnico</h3>
+                        <p>Configuración, desbloqueo, instalación de software, recuperación de datos
+                            y asesoría personalizada para hogares y empresas.
+                        </p>
+                    </article>
+
+                    <article class="tarjeta-servicios">
+                        <div class="icono-tarjeta" aria-hidden="true">📦</div>
+                        <h3>Envíos</h3>
+                        <p>
+                            Entregas en todas las partes del país.
+                            Retiro en tienda disponible sin costo adicional.
+                        </p>
+                    </article>
+
+                </div>
+            </section>
+
+            <section id="nosotros" class="nosotros" aria-labelledby="titulo-nosotros">
+                <div class="texto-nosotros">
+                    <h2 id="titulo-nosotros">¿Quiénes somos?</h2>
+                    <p>
+                        Celu Store nació en 2021 con una misión simple: ofrecer soluciones
+                        tecnológicas accesibles y confiables para cada costarricense.
+                    </p>
+                    <p>
+                        Hoy contamos con un equipo de técnicos especializados, más de
+                        1000 productos en inventario y la confianza de miles de clientes
+                        satisfechos en todo el país.
+                    </p>
+                    <ul class="estadisticas" role="list">
+                        <li><strong>+5 años</strong><span> de experiencia</span></li>
+                        <li><strong>+1000</strong><span> productos</span></li>
+                        <li><strong>+5000</strong><span> clientes felices</span></li>
+                    </ul>
+                </div>
+                <div class="imagen-nosotros">
+                    <img src="img/celustore-logo.png" alt="Logotipo de Celu Store: ilustración de teléfonos móviles en tonos azules junto al texto Celu Store, Accesorios y Reparación" class="logo-nosotros">
+                </div>
+            </section>
+
+            <section id="contacto" class="contacto" aria-labelledby="titulo-contacto">
+                <div class="encabezado-seccion">
+                    <h2 id="titulo-contacto">Contáctanos</h2>
+                </div>
+                <div class="contenedor-contacto">
+                    <div class="contenedor-formulario">
+                        <div class="contacto-formulario" role="form" aria-label="Formulario de contacto">
+
+                            <div class="grupo-formulario">
+                                <label for="nombreContacto">Tu nombre</label>
+                                <input type="text" id="nombreContacto" aria-required="true" name="nombre" 
+                                placeholder="Ej: Douglas Ordoñez Mora" autocomplete="name">
+                            </div>
+                            
+                            <div class="grupo-formulario">
+                                <label for="emailContacto">Correo electrónico</label>
+                                <input type="email" id="emailContacto" aria-required="true" name="email" 
+                                placeholder="correo@ejemplo.com" autocomplete="email">
+                            </div>
+
+                            <div class="grupo-formulario">
+                                <label for="mensajeContacto">Mensaje</label>
+                                <textarea id="mensajeContacto" rows="4" aria-required="true"
+                                placeholder="¿En que podemos ayudarte?" ></textarea>
+                            </div>
+
+                            <button type="button" class="btn btn-contacto" id="enviarContacto">
+                                Enviar Mensaje
+                            </button>
+                            
+                            <p class="mensaje-formulario" id="mensajeFormulario" role="alert" aria-live="polite"></p>
+
+                        </div>
+                    </div>
+
+                    <div class="informacion-contacto">
+                        <h3>Información de contacto</h3>
+                        <ul role="list">
+                            <li><span aria-hidden="true">📍</span><span>San Carlos, Costa Rica</span></li>
+                            <li><span aria-hidden="true">📞</span><a href="tel:+50683288317">8328-8317</a></li>
+                            <li><span aria-hidden="true">✉️</span><a href="mailto:celuStoreSC@gmail.com">gmail: celuStoreSC@gmail.com</a></li>
+                            <li><span aria-hidden="true">📍</span><span>Lunes-Sábado: 9am a 6pm</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+
+        <footer class="footer" role="contentinfo">
+            <div class="interior-footer">
+                <p class="marca-footer">📱 Celu<strong>Store</strong></p>
+                <p>&copy; 2026 Celu Store Costa Rica. Todos los derechos reservados.</p>
+                <p>Laboratorio 01 - ISW-521, UTN</p>
+            </div>
+        </footer>
+
+        <script src="main.js"></script>
+
+    </body>
+</html>
