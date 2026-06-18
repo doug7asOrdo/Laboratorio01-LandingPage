@@ -46,6 +46,7 @@ botonMenu.addEventListener('click', function () {
 
     const estaAbierto = menuPrincipal.classList.contains('open');
     botonMenu.setAttribute('aria-expanded', estaAbierto ? 'true' : 'false');
+    botonMenu.setAttribute('aria-label', estaAbierto ? 'Cerrar menú de navegación' : 'Abrir menú de navegación');
 });
 
 menuPrincipal.querySelectorAll('a').forEach(function (enlace) {
@@ -62,7 +63,7 @@ const CLAVE_NOMBRE_FORMULARIO = 'celustore-contact-name';
 const campoNombre = document.getElementById('nombreContacto');
 const campoEmail = document.getElementById('emailContacto');
 const campoMensaje = document.getElementById('mensajeContacto');
-const botonEnviar = document.getElementById('enviarContacto');
+const formularioContacto = document.querySelector('.contacto-formulario');
 const mensajeFeedback = document.getElementById('mensajeFormulario');
 
 (function iniciarFormulario() {
@@ -81,7 +82,9 @@ campoNombre.addEventListener('input', function () {
 });
 
 
-botonEnviar.addEventListener('click', function () {
+formularioContacto.addEventListener('submit', function (evento) {
+    evento.preventDefault(); // se vita que el navegador recargue la página al enviar
+
     const nombre = campoNombre.value.trim();
     const email = campoEmail.value.trim();
     const mensaje = campoMensaje.value.trim();
@@ -105,8 +108,3 @@ botonEnviar.addEventListener('click', function () {
     campoEmail.value = '';
     campoMensaje.value = '';
 });
-
-
-
-
-

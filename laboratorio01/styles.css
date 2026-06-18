@@ -113,25 +113,6 @@ a {
 .logo-icono { font-size: 1.6rem; }
 .logo-texto strong {color: var(--color-destacado)}
 
-.menu-principal ul {
-    display: flex;
-    gap: var(--espacio-mediano);
-    align-items: center;
-}
-
-.menu-principal a {
-    color: var(--color-texto-encabezado);
-    font-weight: 500;
-    padding: var(--espacio-extra-pequeños) var(--espacio-extra-pequeños);
-    border-radius: var(--radio-pequeño);
-    position: relative;
-    transition: color var(--transicion);
-}
-
-
-.logo-icono { font-size: 1.6rem; }
-.logo-texto strong { color: var(--color-destacado); }
- 
 .boton-menu {
   display: flex;         
   flex-direction: column;
@@ -609,6 +590,10 @@ textarea {
     font-weight: 500;
 }
  
+.informacion-contacto {
+    font-style: normal;
+}
+
 .informacion-contacto h3 {
     font-family: var(--fuente-titulos);
     font-size: 1.3rem;
